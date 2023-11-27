@@ -15,6 +15,19 @@ function scheduleMeeting() {
         .then(data => {
           // Handle the response data
           console.log(data);
+          
+          const resultsDiv = document.getElementById('results');
+
+          // Clear previous results
+          resultsDiv.innerHTML = '';
+      
+          // Display results
+          data.scheduledTimes.forEach((time, index) => {
+            const city = data.timeZones[index];
+            const resultItem = document.createElement('p');
+            resultItem.textContent = `City: ${city}, Scheduled Time: ${time}`;
+            resultsDiv.appendChild(resultItem);
+          });
         })
         .catch(error => console.error('Error:', error));
       
