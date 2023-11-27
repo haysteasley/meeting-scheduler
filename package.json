@@ -1,3 +1,7 @@
+"scripts": {
+  "start": "node index.js"
+}
+
 {
   "name": "meeting-scheduler",
   "version": "1.0.0",
