@@ -16,7 +16,7 @@ function scheduleMeeting() {
           // Handle the response data
           console.log(data);
         })
-        .catch(error => console.error('Error:', error))
+        .catch(error => console.error('Error:', error));
       
 
         .then(response => response.json())
