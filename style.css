@@ -2,18 +2,26 @@
     font-family: Arial, sans-serif;
     margin: 20px;
     display: flex;
-    background: purple;
-    align-content: center;
+    flex-direction: column;
+    background: rgb(241, 147, 241);
+    align-items: center;
+    padding: 50px;
+    border-radius: 50px;
   }
   
+  body {
+    margin: 50px;
+  }
   label {
     display: block;
+    align-items: center;
     margin-bottom: 5px;
   }
   
   input {
     width: 100%;
     padding: 8px;
+    align-items: center;
     margin-bottom: 10px;
   }
   
@@ -31,19 +39,23 @@
   }
   
   #result {
-    font-family: Arial, Helvetica, sans-serif;
-    font-family: Arial, sans-serif;
     margin: 20px;
     display: flex;
-    background: rgb(150, 94, 150);
     align-content: center;
   }
-  #rseultss {
+  #resultss {
     margin-top: 20px;
+    font-family: Arial, sans-serif;
     display: flex;
-    background: rgb(159, 95, 159);
-    align-content: center;
-    flex-direction: row;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    background: rgb(241, 147, 241);
+    border-radius: 40px;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
     text-decoration: solid;
+    margin: 20px;
+    padding: 50px;
   }
   
