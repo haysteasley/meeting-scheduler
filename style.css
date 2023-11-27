@@ -1,6 +1,9 @@
-body {
+#input {
     font-family: Arial, sans-serif;
     margin: 20px;
+    display: flex;
+    background: purple;
+    align-content: center;
   }
   
   label {
@@ -15,7 +18,7 @@ body {
   }
   
   button {
-    background-color: #4CAF50;
+    background-color: #000000;
     color: white;
     padding: 10px 15px;
     border: none;
@@ -24,11 +27,23 @@ body {
   }
   
   button:hover {
-    background-color: #45a049;
+    background-color: #616161;
   }
   
-  #rseults {
+  #result {
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    display: flex;
+    background: rgb(150, 94, 150);
+    align-content: center;
+  }
+  #rseultss {
     margin-top: 20px;
-    font-weight: bold;
+    display: flex;
+    background: rgb(159, 95, 159);
+    align-content: center;
+    flex-direction: row;
+    text-decoration: solid;
   }
   
