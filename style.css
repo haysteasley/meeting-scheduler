@@ -10,7 +10,9 @@
   }
   
   body {
-    margin: 50px;
+    margin-right: 230px;
+    margin-left: 230px;
+    margin-top: 150px;
   }
   label {
     display: block;
