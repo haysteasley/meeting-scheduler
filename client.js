@@ -15,7 +15,7 @@ function scheduleMeeting() {
         .then(data => {
           // Handle the response data
           console.log(data);
-          
+
           const resultsDiv = document.getElementById('results');
 
           // Clear previous results
@@ -25,7 +25,7 @@ function scheduleMeeting() {
           data.scheduledTimes.forEach((time, index) => {
             const city = data.timeZones[index];
             const resultItem = document.createElement('p');
-            resultItem.textContent = `City: ${city}, Scheduled Time: ${time}`;
+            resultItem.textContent = `${city}, ${time}`;
             resultsDiv.appendChild(resultItem);
           });
         })
