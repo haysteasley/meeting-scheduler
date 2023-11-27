@@ -2,15 +2,23 @@ function scheduleMeeting() {
     const dateTimeInput = document.getElementById('dateTime');
     const dateTimeValue = dateTimeInput.value;
 
-    fetch('http://localhost:5500/schedule-meeting', {
+    fetch('https://meeting-scheduler-h9eo.onrender.com/schedule-meeting', {
         method: 'POST',
         headers: {
-            'Content-Type': 'application/json',
+          'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-            dateTime: dateTimeValue,
+          dateTime: dateTimeValue,
         }),
-    })
+      })
+        .then(response => response.json())
+        .then(data => {
+          // Handle the response data
+          console.log(data);
+        })
+        .catch(error => console.error('Error:', error))
+      
+
         .then(response => response.json())
         .then(data => {
             const timezoneResult = document.getElementById('timezoneResult');
