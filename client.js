@@ -19,7 +19,7 @@ function scheduleMeeting() {
         .catch(error => console.error('Error:', error));
       
 
-        .then(response => response.json())
+        then(response => response.json())
         .then(data => {
             const timezoneResult = document.getElementById('timezoneResult');
 
